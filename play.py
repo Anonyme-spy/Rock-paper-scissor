@@ -38,6 +38,7 @@ def normal_game():
     s(1)
     print("3")
     s(1)
+    print("CPU : ", ai, "\nYour choice is: ", player)
 
     if player == ai:
         print("it's a tie")
@@ -48,6 +49,7 @@ def normal_game():
     elif player == "scissor" and ai == "paper":
         print("you wins")
     else:
+        print("CPU wins")
         print("Loser")
     # rock paper scissor
 
@@ -91,6 +93,8 @@ def variant():
     s(1)
     print("3")
     s(1)
+
+    print("CPU : ", ai, "\nYour choice is: ", player)
     if player == ai:
         print("it's a tie")
     elif player == "rock" and ai == "scissor":
@@ -114,6 +118,7 @@ def variant():
     elif player == "spock" and ai == "scissor":
         print("you wins")
     else:
+        print("CPU wins")
         print("Loser")
     # rock paper scissor lizard spock
 
@@ -138,3 +143,5 @@ if __name__ == "__main__":
     while play == "Y":
         main()
         play = input("Do you want to play again? Y/N: ").upper()
+
+    print("thanks for playing")
